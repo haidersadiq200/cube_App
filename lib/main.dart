@@ -46,7 +46,7 @@ class CubeTracker extends StatefulWidget {
 class _CubeTrackerState extends State<CubeTracker> {
   List<Cube> cubes = [];
   DBHelper dbHelper = DBHelper();
-  NotificationService notificationService = NotificationService();
+  // NotificationService notificationService = NotificationService();
 
   @override
   void initState() {
@@ -86,7 +86,7 @@ class _CubeTrackerState extends State<CubeTracker> {
   void sendNotification(int cubeId, String notificationType) {
     String title = 'Reminder for Cube ID: $cubeId';
     String body = 'It\'s time for your $notificationType notification';
-    notificationService.showNotification(cubeId, title, body);
+    // notificationService.showNotification(cubeId, title, body);
   }
 
   @override
